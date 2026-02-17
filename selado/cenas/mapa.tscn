@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b3hi35qwf4ln3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_03tcg"]
+size = Vector2(32.496887, 651.39545)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wuvpg"]
+size = Vector2(1125.2485, 27.697693)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wiy7y"]
+size = Vector2(35.248512, 637.69775)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhl4x"]
+size = Vector2(1125.2485, 29.848816)
+
+[node name="Mapa" type="StaticBody2D" unique_id=82376028]
+position = Vector2(438, 187)
+
+[node name="parede_esquerda" type="CollisionShape2D" parent="." unique_id=2028072236]
+position = Vector2(-424, 141.30228)
+shape = SubResource("RectangleShape2D_03tcg")
+
+[node name="parede_chao" type="CollisionShape2D" parent="." unique_id=1362944995]
+position = Vector2(155, 451.99997)
+shape = SubResource("RectangleShape2D_wuvpg")
+
+[node name="parede_direita" type="CollisionShape2D" parent="." unique_id=1704134979]
+position = Vector2(704.37573, 147.15112)
+shape = SubResource("RectangleShape2D_wiy7y")
+
+[node name="parede_teto" type="CollisionShape2D" parent="." unique_id=1536744232]
+position = Vector2(155, -166.07559)
+shape = SubResource("RectangleShape2D_nhl4x")

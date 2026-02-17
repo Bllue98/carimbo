@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bpay8i40xxe1"]
+
+[ext_resource type="Script" uid="uid://ca1hdu6cvqq1m" path="res://scripts/movimentacao.gd" id="1_01tga"]
+[ext_resource type="Texture2D" uid="uid://dcskbmld6flsc" path="res://assets/personagem/personagem_principal.png" id="1_8adsm"]
+[ext_resource type="AudioStream" uid="uid://csolo1v5eoxoe" path="res://efeitos de som/Player/Passo/passo_1.mp3" id="3_3o8vf"]
+[ext_resource type="AudioStream" uid="uid://t8v33ta0gjlf" path="res://efeitos de som/Player/Passo/passo_2.mp3" id="4_rbten"]
+[ext_resource type="AudioStream" uid="uid://q68b6e4g6e10" path="res://efeitos de som/Player/Passo/passo_3.mp3" id="5_p2ucq"]
+[ext_resource type="AudioStream" uid="uid://b0kju01yrt7h6" path="res://efeitos de som/Player/Passo/passo_4.mp3" id="6_g4ww8"]
+[ext_resource type="AudioStream" uid="uid://c58m6a60ux7fn" path="res://efeitos de som/Player/Passo/passo_5.mp3" id="7_tyx55"]
+[ext_resource type="AudioStream" uid="uid://skvaftwx0m8y" path="res://efeitos de som/Player/Passo/passo_6.mp3" id="8_n4dvy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gulex"]
+size = Vector2(123, 136)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1573227157]
+position = Vector2(555, 266)
+up_direction = Vector2(0, 1)
+slide_on_ceiling = false
+script = ExtResource("1_01tga")
+
+[node name="player" type="Sprite2D" parent="." unique_id=1926041799]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_8adsm")
+
+[node name="colisão_personagem_principal" type="CollisionShape2D" parent="." unique_id=704600105]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_gulex")
+
+[node name="passo1" type="AudioStreamPlayer" parent="." unique_id=884467609]
+stream = ExtResource("3_3o8vf")
+volume_db = -15.0
+
+[node name="passo2" type="AudioStreamPlayer" parent="." unique_id=1857843239]
+stream = ExtResource("4_rbten")
+volume_db = -15.0
+
+[node name="passo3" type="AudioStreamPlayer" parent="." unique_id=131035264]
+stream = ExtResource("5_p2ucq")
+volume_db = -15.0
+
+[node name="passo4" type="AudioStreamPlayer" parent="." unique_id=1734478493]
+stream = ExtResource("6_g4ww8")
+volume_db = -15.0
+
+[node name="passo5" type="AudioStreamPlayer" parent="." unique_id=260462648]
+stream = ExtResource("7_tyx55")
+volume_db = -15.0
+
+[node name="passo6" type="AudioStreamPlayer" parent="." unique_id=2048540942]
+stream = ExtResource("8_n4dvy")
+volume_db = -15.0

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://jp1me3mfkduk"]
+
+[ext_resource type="Script" uid="uid://dxlnmicw5m12r" path="res://scripts/botao.gd" id="1_64url"]
+[ext_resource type="AudioStream" uid="uid://20v76nr0fmar" path="res://efeitos de som/Menu/apertar_play.mp3" id="2_nbnbt"]
+[ext_resource type="AudioStream" uid="uid://cav0nqul88jgp" path="res://efeitos de som/Menu/hover.mp3" id="3_hsu4v"]
+
+[node name="Menu" type="Node2D" unique_id=116122351]
+metadata/_edit_horizontal_guides_ = [-30.0]
+
+[node name="botao_jogar" type="Button" parent="." unique_id=495010350]
+offset_left = 267.0
+offset_top = 181.00002
+offset_right = 327.0
+offset_bottom = 212.00002
+scale = Vector2(1.2, 1.2)
+mouse_default_cursor_shape = 2
+action_mode = 0
+text = "Jogar"
+script = ExtResource("1_64url")
+
+[node name="apertar_play" type="AudioStreamPlayer" parent="botao_jogar" unique_id=866419412]
+stream = ExtResource("2_nbnbt")
+volume_db = 1.2
+
+[node name="hover_botao" type="AudioStreamPlayer" parent="botao_jogar" unique_id=2127049076]
+stream = ExtResource("3_hsu4v")
+volume_db = 1.2

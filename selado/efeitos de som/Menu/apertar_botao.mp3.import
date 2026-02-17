@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgwvjyfohshii"
+path="res://.godot/imported/apertar_botao.mp3-cd66561c65a4c35921523ba1894455c9.mp3str"
+
+[deps]
+
+source_file="res://efeitos de som/Menu/apertar_botao.mp3"
+dest_files=["res://.godot/imported/apertar_botao.mp3-cd66561c65a4c35921523ba1894455c9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

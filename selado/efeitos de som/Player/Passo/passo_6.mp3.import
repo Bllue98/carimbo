@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://skvaftwx0m8y"
+path="res://.godot/imported/passo_6.mp3-4da444d4b6b75eadb325de0eca2cdb97.mp3str"
+
+[deps]
+
+source_file="res://efeitos de som/Player/Passo/passo_6.mp3"
+dest_files=["res://.godot/imported/passo_6.mp3-4da444d4b6b75eadb325de0eca2cdb97.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

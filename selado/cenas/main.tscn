@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://clh42ydubng3a"]
+
+[ext_resource type="PackedScene" uid="uid://bpay8i40xxe1" path="res://cenas/personagem.tscn" id="1_q753v"]
+[ext_resource type="PackedScene" uid="uid://b3hi35qwf4ln3" path="res://cenas/mapa.tscn" id="2_0aq6d"]
+
+[node name="Main" type="Node2D" unique_id=918216619]
+
+[node name="Player" parent="." unique_id=1573227157 instance=ExtResource("1_q753v")]
+position = Vector2(584, 330)
+
+[node name="Mapa" parent="." unique_id=82376028 instance=ExtResource("2_0aq6d")]
+position = Vector2(439, 187)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1530221681]
+position = Vector2(584, 330)
+editor_draw_screen = false

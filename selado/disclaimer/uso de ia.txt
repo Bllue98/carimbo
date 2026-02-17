@@ -1,0 +1,13 @@
+Este é o arquivo de usos de IA no projeto (Code side)
+escrito por: Kauan edney (Blue98)
+
+Trabalho como desenvolvedor de sistemas codando em typescript e javascript porém, eu jamais fiz algum jogo
+ou usei alguma engine, então minha principal ferramente de estudo e aprendizado foi o próprio documentário do Godot e o Chat-gpt da OpenAI.
+
+https://docs.godotengine.org/en/stable/getting_started/first_2d_game/03.coding_the_player.html
+
+Meus usos de IA não foram diretamente usados na criação dos códigos, e sim na direção de conhecimentos
+sobre as funções e objetos utilizaveis já disponíveis no Godot.
+
+Como por exemplo, no script de movimentação, não conhecia a função "physics_process", na qual o chat gpt me 
+explicou sobre.
