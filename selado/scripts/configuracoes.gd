@@ -7,11 +7,8 @@ func _ready():
 	
 
 func _on_button_pressed():
-	disabled=true
-	$apertar_play.play()
-	Transition.fade_into("res://cenas/tutorial_cena.tscn")
-	await $apertar_play.finished
-	
+	$configuracoes_menu.visible = true
+
 	
 #som de selecionar botão e aumentar ele de tamanho
 func _on_mouse_entered():

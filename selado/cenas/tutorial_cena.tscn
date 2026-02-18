@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://muixg7fj3xjx"]
+
+[ext_resource type="PackedScene" uid="uid://c6ganwvl64wbb" path="res://cenas/playerCamera.tscn" id="1_0jv44"]
+[ext_resource type="PackedScene" uid="uid://byulncqmab2kw" path="res://cenas/mapa_tutorial.tscn" id="2_0jpes"]
+
+[node name="tutorial_cena" type="Node3D" unique_id=1375823118]
+
+[node name="mapa" parent="." unique_id=1957869007 instance=ExtResource("2_0jpes")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10911083, 9.536743e-07, 0.021411896)
+
+[node name="player" parent="." unique_id=1602289991 instance=ExtResource("1_0jv44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.51552176, 0)

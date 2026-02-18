@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://byulncqmab2kw"]
+
+[ext_resource type="Texture2D" uid="uid://4g21jj5eklsf" path="res://assets/carimbonc_cenário_tutorial/carimbonc_mesa_tutorial.png" id="1_mrqge"]
+[ext_resource type="PackedScene" uid="uid://cvt25ygxmfwbq" path="res://cenas/estojo.tscn" id="2_cat5v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mrqge"]
+size = Vector3(26.776611, 0.3378296, 18.511963)
+
+[node name="Node3D" type="Node3D" unique_id=1957869007]
+
+[node name="chao" type="StaticBody3D" parent="." unique_id=1512520942]
+transform = Transform3D(0.775, 0, 0, 0, 0.775, 0, 0, 0, 0.775, 0, -0.11, 0)
+
+[node name="chao_sprite" type="Sprite3D" parent="chao" unique_id=1539995466]
+transform = Transform3D(0.775, 0, 0, 0, -3.3876322e-08, 0.775, 0, -0.775, -3.3876322e-08, 0.01632352, -0.1949815, 0.00204517)
+double_sided = false
+texture_filter = 1
+texture = ExtResource("1_mrqge")
+
+[node name="chao_colisao" type="CollisionShape3D" parent="chao" unique_id=1066855964]
+transform = Transform3D(0.775, 0, 0, 0, 0.775, 0, 0, 0, 0.775, -0.06335449, 0.09230471, -0.30815315)
+shape = SubResource("BoxShape3D_mrqge")
+
+[node name="Estojo" parent="." unique_id=69899324 instance=ExtResource("2_cat5v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6600165, 0, -4.6154966)

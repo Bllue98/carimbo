@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://c6ganwvl64wbb"]
+
+[ext_resource type="Texture2D" uid="uid://dcskbmld6flsc" path="res://assets/personagem/personagem_principal.png" id="1_0mca6"]
+[ext_resource type="Script" uid="uid://bujcm81jigy17" path="res://scripts/movimentacao3d.gd" id="1_omyu8"]
+[ext_resource type="AudioStream" uid="uid://csolo1v5eoxoe" path="res://efeitos de som/Player/Passo/passo_1.mp3" id="3_ig6bj"]
+[ext_resource type="AudioStream" uid="uid://t8v33ta0gjlf" path="res://efeitos de som/Player/Passo/passo_2.mp3" id="4_svpgw"]
+[ext_resource type="AudioStream" uid="uid://q68b6e4g6e10" path="res://efeitos de som/Player/Passo/passo_3.mp3" id="5_nrwrc"]
+[ext_resource type="AudioStream" uid="uid://b0kju01yrt7h6" path="res://efeitos de som/Player/Passo/passo_4.mp3" id="6_q3v37"]
+[ext_resource type="AudioStream" uid="uid://c58m6a60ux7fn" path="res://efeitos de som/Player/Passo/passo_5.mp3" id="7_k05fd"]
+[ext_resource type="AudioStream" uid="uid://skvaftwx0m8y" path="res://efeitos de som/Player/Passo/passo_6.mp3" id="8_jwfl1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_omyu8"]
+size = Vector3(0.5010338, 0.74448395, 0.13265228)
+
+[node name="Personagem" type="Node3D" unique_id=1602289991]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=448707556]
+script = ExtResource("1_omyu8")
+
+[node name="sprite" type="Sprite3D" parent="CharacterBody3D" unique_id=1856817170]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.0010626316, 0.42271435, 0.20375335)
+billboard = 1
+render_priority = 100
+texture = ExtResource("1_0mca6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=737746412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.005624771, 0.77748275, 0.0064430237)
+shape = SubResource("BoxShape3D_omyu8")
+
+[node name="passo1" type="AudioStreamPlayer3D" parent="CharacterBody3D" unique_id=971551394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.596132, 0)
+stream = ExtResource("3_ig6bj")
+volume_db = -25.0
+
+[node name="passo2" type="AudioStreamPlayer3D" parent="CharacterBody3D" unique_id=1910268486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.596132, 0)
+stream = ExtResource("4_svpgw")
+volume_db = -30.0
+
+[node name="passo3" type="AudioStreamPlayer3D" parent="CharacterBody3D" unique_id=581030392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.596132, 0)
+stream = ExtResource("5_nrwrc")
+volume_db = -25.0
+
+[node name="passo4" type="AudioStreamPlayer3D" parent="CharacterBody3D" unique_id=42275162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.596132, 0)
+stream = ExtResource("6_q3v37")
+volume_db = -25.0
+
+[node name="passo5" type="AudioStreamPlayer3D" parent="CharacterBody3D" unique_id=2052876145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.596132, 0)
+stream = ExtResource("7_k05fd")
+volume_db = -25.0
+
+[node name="passo6" type="AudioStreamPlayer3D" parent="CharacterBody3D" unique_id=40296470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.596132, 0)
+stream = ExtResource("8_jwfl1")
+volume_db = -25.0
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=1969830095]
+transform = Transform3D(1, 0, 0, 0, 0.57357645, 0.81915206, 0, -0.81915206, 0.57357645, 0.005, 4.795, 3.36)
+current = true
+fov = 65.0

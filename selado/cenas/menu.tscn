@@ -3,16 +3,37 @@
 [ext_resource type="Script" uid="uid://dxlnmicw5m12r" path="res://scripts/botao.gd" id="1_64url"]
 [ext_resource type="AudioStream" uid="uid://20v76nr0fmar" path="res://efeitos de som/Menu/apertar_play.mp3" id="2_nbnbt"]
 [ext_resource type="AudioStream" uid="uid://cav0nqul88jgp" path="res://efeitos de som/Menu/hover.mp3" id="3_hsu4v"]
+[ext_resource type="Script" uid="uid://bgega0xbvmbrb" path="res://scripts/configuracoes.gd" id="4_mmoso"]
+[ext_resource type="Script" uid="uid://4b082r8106j8" path="res://scripts/sair.gd" id="5_qvcyk"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_lx6od"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mmoso"]
+texture = SubResource("MeshTexture_lx6od")
+modulate_color = Color(0, 0, 0, 0.6039216)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qvcyk"]
+bg_color = Color(0.8156863, 0, 0, 0.3882353)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 16
+
+[sub_resource type="LabelSettings" id="LabelSettings_qvcyk"]
+font_size = 35
+font_color = Color(0.9678711, 0.31396598, 0.32635614, 1)
 
 [node name="Menu" type="Node2D" unique_id=116122351]
 metadata/_edit_horizontal_guides_ = [-30.0]
 
 [node name="botao_jogar" type="Button" parent="." unique_id=495010350]
-offset_left = 267.0
-offset_top = 181.00002
-offset_right = 327.0
-offset_bottom = 212.00002
-scale = Vector2(1.2, 1.2)
+offset_left = 318.0
+offset_top = 405.0
+offset_right = 398.0
+offset_bottom = 445.0
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
 mouse_default_cursor_shape = 2
 action_mode = 0
 text = "Jogar"
@@ -20,8 +41,63 @@ script = ExtResource("1_64url")
 
 [node name="apertar_play" type="AudioStreamPlayer" parent="botao_jogar" unique_id=866419412]
 stream = ExtResource("2_nbnbt")
-volume_db = 1.2
 
 [node name="hover_botao" type="AudioStreamPlayer" parent="botao_jogar" unique_id=2127049076]
 stream = ExtResource("3_hsu4v")
-volume_db = 1.2
+volume_db = -7.0
+
+[node name="configuracoes" type="Button" parent="." unique_id=147133415]
+offset_left = 299.0
+offset_top = 461.0
+offset_right = 418.0
+offset_bottom = 501.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_default_cursor_shape = 2
+action_mode = 0
+text = "Configurações"
+script = ExtResource("4_mmoso")
+
+[node name="hover_botao" type="AudioStreamPlayer" parent="configuracoes" unique_id=829929484]
+stream = ExtResource("3_hsu4v")
+volume_db = -7.0
+
+[node name="configuracoes_menu" type="PopupPanel" parent="configuracoes" unique_id=273981813]
+oversampling_override = 1.0
+mode = 3
+title = "configuracoes"
+position = Vector2i(643, 0)
+size = Vector2i(509, 650)
+theme_override_styles/panel = SubResource("StyleBoxTexture_mmoso")
+
+[node name="sair" type="Button" parent="." unique_id=1941040030]
+offset_left = 328.0
+offset_top = 514.0
+offset_right = 388.0
+offset_bottom = 554.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_qvcyk")
+action_mode = 0
+text = "Sair
+"
+script = ExtResource("5_qvcyk")
+
+[node name="hover_botao" type="AudioStreamPlayer" parent="sair" unique_id=1079601194]
+stream = ExtResource("3_hsu4v")
+volume_db = -7.0
+
+[node name="configuracoes_menu" type="PopupPanel" parent="sair" unique_id=1238266817]
+oversampling_override = 1.0
+mode = 3
+title = "configuracoes"
+position = Vector2i(643, 0)
+size = Vector2i(509, 650)
+theme_override_styles/panel = SubResource("StyleBoxTexture_mmoso")
+
+[node name="Label" type="Label" parent="." unique_id=1345243238]
+offset_left = 245.0
+offset_top = 182.0
+offset_right = 473.6195
+offset_bottom = 232.06848
+text = "CARIMBONK"
+label_settings = SubResource("LabelSettings_qvcyk")

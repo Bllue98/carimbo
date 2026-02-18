@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c5nyy4db55xwl"
+path="res://.godot/imported/amassado_2.mp3-320f0fb5f5362ca6b73009c9cf0dc583.mp3str"
+
+[deps]
+
+source_file="res://efeitos de som/Papel/Morte/amassado_2.mp3"
+dest_files=["res://.godot/imported/amassado_2.mp3-320f0fb5f5362ca6b73009c9cf0dc583.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

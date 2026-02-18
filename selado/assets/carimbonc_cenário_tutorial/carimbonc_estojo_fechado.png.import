@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcskbmld6flsc"
-path.s3tc="res://.godot/imported/personagem_principal.png-1cf8b93fc3bd6307aa84415a72c87a2d.s3tc.ctex"
+uid="uid://eccct58fyj80"
+path.s3tc="res://.godot/imported/carimbonc_estojo_fechado.png-22bdbb1660fcc841c1688bd935c99389.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/personagem/personagem_principal.png"
-dest_files=["res://.godot/imported/personagem_principal.png-1cf8b93fc3bd6307aa84415a72c87a2d.s3tc.ctex"]
+source_file="res://assets/carimbonc_cenário_tutorial/carimbonc_estojo_fechado.png"
+dest_files=["res://.godot/imported/carimbonc_estojo_fechado.png-22bdbb1660fcc841c1688bd935c99389.s3tc.ctex"]
 
 [params]
 

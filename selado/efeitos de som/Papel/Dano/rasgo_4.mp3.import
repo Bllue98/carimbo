@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ci45t81lqjpki"
+path="res://.godot/imported/rasgo_4.mp3-58fe2f58bce48c4997d33575bd44ad68.mp3str"
+
+[deps]
+
+source_file="res://efeitos de som/Papel/Dano/rasgo_4.mp3"
+dest_files=["res://.godot/imported/rasgo_4.mp3-58fe2f58bce48c4997d33575bd44ad68.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

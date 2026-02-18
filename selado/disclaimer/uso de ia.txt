@@ -11,3 +11,9 @@ sobre as funções e objetos utilizaveis já disponíveis no Godot.
 
 Como por exemplo, no script de movimentação, não conhecia a função "physics_process", na qual o chat gpt me 
 explicou sobre.
+
+Menu foi feito baseando-me neste vídeo:
+	https://www.youtube.com/watch?v=JVDRAAny8Xk
+	
+A transição do menu foi feita baseando-me neste vídeo:
+	https://www.youtube.com/watch?v=1YkFIs42DXE

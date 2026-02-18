@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cvt25ygxmfwbq"]
+
+[ext_resource type="Script" uid="uid://dcpor0xycvon0" path="res://scripts/estojo.gd" id="1_a8lv7"]
+[ext_resource type="Texture2D" uid="uid://eccct58fyj80" path="res://assets/carimbonc_cenário_tutorial/carimbonc_estojo_fechado.png" id="2_godd8"]
+[ext_resource type="Texture2D" uid="uid://bx0sye250o7w7" path="res://assets/carimbonc_cenário_tutorial/carimbonc_estojo_aberto.png" id="3_godd8"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ct3lb"]
+height = 1.9511719
+radius = 2.2314453
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_py7wm"]
+size = Vector3(4.990151, 1.6293945, 4.2925873)
+
+[node name="Estojo" type="Node3D" unique_id=69899324 node_paths=PackedStringArray("carimbo_estojo_fechado", "carimbo_estojo_aberto")]
+script = ExtResource("1_a8lv7")
+carimbo_estojo_fechado = NodePath("estojo/estojo_fechado")
+carimbo_estojo_aberto = NodePath("estojo/estojo_colisao/estojo_aberto")
+
+[node name="estojo" type="StaticBody3D" parent="." unique_id=247769797]
+
+[node name="estojo_fechado" type="Sprite3D" parent="estojo" unique_id=1876291384]
+process_physics_priority = 1
+transform = Transform3D(0.445, 0, 0, 0, 0.445, 0, 0, 0, 0.445, 0, 0, 0)
+layers = 2
+billboard = 1
+render_priority = 2
+texture = ExtResource("2_godd8")
+
+[node name="estojo_colisao" type="CollisionShape3D" parent="estojo" unique_id=942086623]
+process_physics_priority = 1
+shape = SubResource("CylinderShape3D_ct3lb")
+
+[node name="estojo_aberto" type="Sprite3D" parent="estojo/estojo_colisao" unique_id=1408667270]
+process_physics_priority = 1
+transform = Transform3D(0.445, 0, 0, 0, 0.445, 0, 0, 0, 0.445, 0, 0, 0)
+layers = 2
+billboard = 1
+render_priority = 1
+texture = ExtResource("3_godd8")
+
+[node name="Area3D" type="Area3D" parent="estojo" unique_id=439661732]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="estojo/Area3D" unique_id=694556957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.081501245, 0.7576904, 0.6137619)
+shape = SubResource("BoxShape3D_py7wm")
+debug_color = Color(0.7011061, 0.10859082, 0.54610896, 1)
+
+[node name="zip fecha" type="AudioStreamPlayer3D" parent="." unique_id=1548394234]
+
+[node name="zip abre" type="AudioStreamPlayer3D" parent="." unique_id=284259855]
